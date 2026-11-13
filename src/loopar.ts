@@ -19,6 +19,12 @@ console.log('Kaffe')
 // UPPGIFT 3: gör samma sak som uppgift 1, men skriv bara ut jämna tal.
 //            Tips: n % 2 === 0
 
+for (let i = 1; i <= 10; i++) {
+    if (i % 2 === 0) {
+        console.log(i)
+    }
+}
+
 // UPPGIFT 4: här är kaféets prislista. Skriv ut ett kvitto med en for...of-loop:
 //            "Kardemummabulle: 35 kr" osv, och sist "Summa: ... kr".
 const prislista: number[] = [35, 32, 59, 45]
