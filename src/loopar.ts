@@ -34,6 +34,17 @@ const namnlista: string[] = [
     'Ostmacka',
     'Latte'
 ]
+// Skriver ut varor och pris
+for (let i = 0; i < namnlista.length; i++) {
+    console.log(`${namnlista[i]}: ${prislista[i]} kr`)
+}
+// Skriver ut summan
+let summa = 0
+for (const pris of prislista) {
+    summa += pris
+}
+console.log(`Summa: ${summa} kr`)
+
 // TODO
 
 // UPPGIFT 5 (utmaning): skriv ut en multiplikationstabell för 3:ans tabell,
