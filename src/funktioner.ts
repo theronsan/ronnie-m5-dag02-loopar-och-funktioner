@@ -128,9 +128,11 @@ export const ärJämnt = (n: number): boolean => {
     return n % 2 === 0
 }
 
-/* if (n % 2 === 0) {
-        return true
-    } else {
-        return false
-    }
- */
+// En pilfunktion är en kortare variant av samma kod.
+// Med en pilfunktion kan man hoppa över klamrar och return.
+// Exempel:
+// export const dubbla = (n: number): => n * 2
+// fungerar lika bra som en vanlig funktion:
+// export const dubbla(n: number): number {
+//     return n * 2
+// }
