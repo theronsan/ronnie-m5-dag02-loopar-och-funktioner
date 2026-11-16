@@ -36,6 +36,19 @@ export function medRabatt(pris: number, procent: number): number {
 //    Öppnar vid starttimmen, stänger vid sluttimmen (18 är stängt).
 export function ärÖppet(veckodag: string, klockslag: number): boolean {
     // TODO
+    if (veckodag === 'lördag' || veckodag === 'söndag') {
+        return klockslag >= 9 && klockslag < 16
+    } else if (
+        veckodag === 'måndag' ||
+        veckodag === 'tisdag' ||
+        veckodag === 'onsdag' ||
+        veckodag === 'torsdag' ||
+        veckodag === 'fredag'
+    ) {
+        return klockslag >= 7 && klockslag < 18
+    } else {
+        return false
+    }
 }
 
 // 5. Summan av alla tal i listan, med en loop. summa([1, 2, 3]) ger 6.
