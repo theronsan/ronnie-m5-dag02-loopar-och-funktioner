@@ -54,18 +54,27 @@ export function ärÖppet(veckodag: string, klockslag: number): boolean {
 // 5. Summan av alla tal i listan, med en loop. summa([1, 2, 3]) ger 6.
 export function summa(tal: number[]): number {
     // TODO
-    let resultat = 0
+    let summan = 0
 
     for (let i = 0; i < tal.length; i++) {
-        resultat += tal[i]
+        summan += tal[i]
     }
 
-    return resultat
+    return summan
 }
 
 // 6. Medelvärdet. snitt([2, 4, 6]) ger 4. Tom lista ger 0.
 export function snitt(tal: number[]): number {
     // TODO
+    let medelvarde = 0
+
+    for (let i = 0; i < tal.length; i++) {
+        medelvarde += tal[i]
+    }
+
+    medelvarde = medelvarde / tal.length
+
+    return medelvarde
 }
 
 // 7. Det största talet, med en loop. största([3, 9, 4]) ger 9. Tom lista ger undefined.
