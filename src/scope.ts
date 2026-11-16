@@ -32,4 +32,6 @@ for (let i = 0; i < 3; i++) {
 // Ta bort kommentaren på nästa rad och läs felet:
 console.log(i) // gissning: undefined (eftersom i är deklarerad innanför for-loopen)
 
-//
+// VAD EN FUNKTION KAN OCH INTE KAN SE
+// En funktion kan se variabler som är skapade utanför sitt scope. Globala variabler kan läsas av allt/alla.
+// Men en funktion kan inte från utsidan hitta eller läsa variabler som ligger innanför en funktion eller ett block.
